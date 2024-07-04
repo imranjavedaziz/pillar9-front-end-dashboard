@@ -1,0 +1,46 @@
+.customCheckbox {
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  
+  .customCheckbox:checked {
+    background: linear-gradient(
+      270deg,
+      rgba(183, 49, 255, 0.7) 0%,
+      rgba(29, 44, 223, 0.7) 100%
+    );
+    border: none;
+  }
+  
+  .customCheckbox::before {
+    display: none;
+  }
+  
+  .customCheckbox:checked::before {
+    display: block;
+  }
+  
+  .customCheckbox::before {
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    /* top: 0px;
+    left: 1px; */
+  
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    pointer-events: none;
+    background-image: url("../../../../public/assets/check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  

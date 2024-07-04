@@ -1,0 +1,24 @@
+.selected-flag {
+    background-color: transparent !important;
+}
+
+.search {
+    background-color: rgb(243, 243, 243) !important;
+}
+
+.country:hover {
+    background-color: #fdf4bd !important;
+}
+
+.country-list {
+    background-color: white !important;
+}
+
+.highlight {
+    background-color: #f3e06b !important;
+    color: white;
+}
+
+.highlight:hover {
+    color: black;
+}
